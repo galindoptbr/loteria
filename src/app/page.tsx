@@ -15,12 +15,13 @@ interface HomeProps {
   concurso: MegaSenaProps;
 }
 
-const Home = async () => {
-  const concurso = await fetchMegaSenaData();
+const Home: React.FC<HomeProps> = async ({ concurso }) => {
+  const fetchedConcurso = await fetchMegaSenaData();
+  console.log(concurso);
   
   return (
     <>
-      <MegaSenaComponent concursos={[concurso]} />
+      <MegaSenaComponent concursos={[fetchedConcurso]} />
     </>
   );
 };
