@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import banner from "@/images/megasena-banner.gif";
+import { MegaSenaProps, Premiacao } from "@/types";
 
 interface Props {
   concursos: MegaSenaProps[];

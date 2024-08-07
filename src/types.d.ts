@@ -1,11 +1,11 @@
-interface Premiacao {
+export interface Premiacao {
   descricao: string;
   faixa: number;
   ganhadores: number;
   valorPremio: number;
 }
 
-interface MegaSenaProps {
+export interface MegaSenaProps {
   loteria: string;
   concurso: number;
   data: string;
