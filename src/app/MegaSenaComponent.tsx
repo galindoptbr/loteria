@@ -18,7 +18,7 @@ const MegaSenaComponent: React.FC<Props> = ({ concursos, premiacao }) => {
         {concursos.map((concurso, index) => (
           <React.Fragment key={index}>
             <div className="flex flex-col justify-center max-w-[80%]">
-              <div className="flex items-center gap-2 mt-6">
+              <div className="flex justify-center items-center gap-2 mt-6 ">
                 <h2 className="text-2xl text-[#0065B7] font-bold">
                   Resultado{" "}
                 </h2>
